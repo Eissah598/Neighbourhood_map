@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <title>7 wonders map</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="options-box">
+            <h3>Enter Your Wonder Name</h3>
+            <div class="a1">
+                <!--input to enter wonder name-->
+                <input data-bind="value: title, valueUpdate: 'afterkeydown'" placeholder="Enter wonder name" />
+                <div data-bind="foreach: wonderList">
+                    <a data-bind="text: title, click: $root.clickedLocation"></a>
+                    <br/>
+                </div>
+            </div>
+            <!--Show markers and hide Markers buttons-->
+            <div>
+                <input id="markersVisible" type="button" value="Show Markers">
+                <input id="markersHide" type="button" value="Hide Markers">
+            </div>
+        </div>
+    </div>
+    <div id="map">
+
+    </div>
+    <script src="js/app.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvYj03JaDgC1SjiXvnwIfa2LfiUieo8hw&callback=initMap">
+    </script>
+</body>
+
+</html>
