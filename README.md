@@ -25,10 +25,11 @@ LIVE DEMO:
 
 OUTPUT:
 sample output images
-* index outpu []()
-* output on click[]()
-* searchabe output []()
-* hide listing output []()
+* index output ![](https://user-images.githubusercontent.com/39180713/41535644-b7be328e-7320-11e8-8dc1-024677965104.png)
+* output on click ![](https://user-images.githubusercontent.com/39180713/41535801-42b37430-7321-11e8-901a-2b97c4458950.png)
+* searchable output ![](https://user-images.githubusercontent.com/39180713/41535896-86f182b8-7321-11e8-9b90-adce08dc8d93.png)
+* searchable on click output ![](https://user-images.githubusercontent.com/39180713/41535848-6b01d3aa-7321-11e8-8259-3dfa1e8606a6.png)
+* hide listing output ![](https://user-images.githubusercontent.com/39180713/41535923-9d315292-7321-11e8-8e2d-49fcb711306b.png)
 
 RESULT:
 * how to build a neighbourhood map is complete
