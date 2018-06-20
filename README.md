@@ -21,15 +21,16 @@ HOW TO RUN:
 1. just download the files and run index.html file with the help of any browser
 
 LIVE DEMO:
-* if you want a live demo of project [click here]()
+* if you want a live demo of project [click here](https://github.com/Eissah598/Neighbourhood_map/blob/master/index.html)
 
 OUTPUT:
 sample output images
-* index output ![](https://user-images.githubusercontent.com/39180713/41535644-b7be328e-7320-11e8-8dc1-024677965104.png)
-* output on click ![](https://user-images.githubusercontent.com/39180713/41535801-42b37430-7321-11e8-901a-2b97c4458950.png)
-* searchable output ![](https://user-images.githubusercontent.com/39180713/41535896-86f182b8-7321-11e8-9b90-adce08dc8d93.png)
-* searchable on click output ![](https://user-images.githubusercontent.com/39180713/41535848-6b01d3aa-7321-11e8-8259-3dfa1e8606a6.png)
-* hide listing output ![](https://user-images.githubusercontent.com/39180713/41535923-9d315292-7321-11e8-8e2d-49fcb711306b.png)
+* index output ![](https://user-images.githubusercontent.com/39180713/41660334-681e3ca2-74b9-11e8-9586-946857cf07e7.png)
+* output on click ![](https://user-images.githubusercontent.com/39180713/41660335-6860764e-74b9-11e8-8a54-d9bf9d68f05d.png)
+* searchable output ![](https://user-images.githubusercontent.com/39180713/41660336-68a04f30-74b9-11e8-88b2-f4df328b79e1.png)
+* searchable on click output ![](https://user-images.githubusercontent.com/39180713/41660337-68e1d3ec-74b9-11e8-9c25-f9da2f9a6e4f.png)
+* onclick on list ![](https://user-images.githubusercontent.com/39180713/41660338-69202b4c-74b9-11e8-869c-8bdf1bff50bf.png)
+* hide listing output ![](https://user-images.githubusercontent.com/39180713/41660539-f8e18b36-74b9-11e8-9b91-b2a65c72e6c8.png)
 
 RESULT:
 * how to build a neighbourhood map is complete
