@@ -2,7 +2,7 @@
 var markers = [];
 var window;
 var map;
-
+var multipleInfoWindow;
 //initialization of marker info window and latlong bounds
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
@@ -12,9 +12,8 @@ function initMap() {
         },
         zoom: 8
     });
-    var multipleInfoWindow = new google.maps.InfoWindow();
+    multipleInfoWindow = new google.maps.InfoWindow();
     var bounds = new google.maps.LatLngBounds();
-    window = multipleInfoWindow;
     model.myMap = ko.computed(function () {
         showMap(null);
         markers = [];
@@ -37,8 +36,9 @@ function initMap() {
             this.marker.addListener('click', function () {
                 toggleBounce(this);
                 map.panTo(this.getPosition());
-                createInfoWindow(this, multipleInfoWindow);
+
                 //createInfoWindow(this, multipleInfoWindow);
+                createInfoWindow(this, multipleInfoWindow);
 
             });
 
@@ -54,8 +54,10 @@ function initMap() {
     }, model);
 }
 
-function selectedLocation(mark){
+//function to display location when clicked
+function selectedLocation(mark) {
     toggleBounce(mark);
+    createInfoWindow(mark, multipleInfoWindow);
 }
 
 //to create a info window and display the content 
@@ -203,7 +205,7 @@ function ViewModel() {
             return stringStartsWith(item.title.toLowerCase(), filter);
         });
     }, this);
-    this.clickedLocation = function(name){
+    this.clickedLocation = function (name) {
         selectedLocation(name.marked)
     }
 }
@@ -219,6 +221,20 @@ var stringStartsWith = function (string, startsWith) {
 var model = new ViewModel();
 ko.applyBindings(model);
 
+//function that displays the map error
 function googleMapError() {
     alert("Failed to load Map. Please check your internet and try again.");
+}
+
+// to open and close navigation
+function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
 }

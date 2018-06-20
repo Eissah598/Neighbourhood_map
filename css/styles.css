@@ -1,41 +1,56 @@
-html,
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-    
-    #map {
-        bottom: 0px;
-        height: 100%;
-        left: 362px;
-        position: absolute;
-        right: 0px;
-    }
-    
-    .container {
-        height: 100%;
-        position: relative;
-    }
-    
-    .options-box {
-        background-color: gray;
-        border: 1px solid #999;
-        border-radius: 3px;
-        height: 100%;
-        line-height: 35px;
-        padding: 10px 10px 30px 10px;
-        text-align: left;
-        width: 340px;
-    }
-    
-    .name {
-        text-transform: capitalize;
-        font-size: 20px;
-        color: blue;
-    }
+body {
+    font-family: "Lato", sans-serif;
+}
 
-    .a1{
-        padding: 5%;
-    }
+#map {
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -4;
+}
+
+.option-box {
+    background-color: #fff;
+    border-radius: 3px;
+    height: 100%;
+    line-height: 33px;
+    padding: 10px 10px 30px 10px;
+    text-align: left;
+}
+
+.list:hover {
+    color: #fff;
+    background-color: #555;
+    padding: 1%;
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#markersVisible, #markersHide {
+    background-color: #fff;
+    color: #555;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+#markersVisible:hover, #markersHide:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+h1 {
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(7, 6, 6, 0.65);
+}
+
+.name {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: blue;
+}
