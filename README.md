@@ -21,7 +21,7 @@ HOW TO RUN:
 1. just download the files and run index.html file with the help of any browser
 
 LIVE DEMO:
-* if you want a live demo of project [click here](https://github.com/Eissah598/Neighbourhood_map/blob/master/index.html)
+* if you want a live demo of project [click here](https://htmlpreview.github.io/?https://github.com/Eissah598/Neighbourhood_map/blob/master/index.html)
 
 OUTPUT:
 sample output images
